@@ -3,7 +3,7 @@ variable "organization_name" {
   description = "Organization name"
 }
 
-variable "description" {
+variable "organization_description" {
   type        = string
   description = "Organization description"
 }
@@ -20,7 +20,7 @@ variable "billing_email" {
 
 variable "blog_url" {
   type        = string
-  description = "Company blog sit URL"
+  description = "Company blog site URL"
 }
 
 variable "twitter_username" {

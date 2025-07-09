@@ -1,11 +1,11 @@
 module "organization" {
-  source             = "../../modules/organization"
-  project_name       = "My Organization Project"
-  project_body       = "A project for managing my GitHub org"
+  source                   = "../../modules/organization"
+  organization_name        = "My GitHub Organization"
+  company_name             = "My Company"
   organization_description = "A GitHub organization for managing projects"
-  webhook_url        = "https://example.com/webhook"
-  events             = ["push", "pull_request"]
-  twitter_user            = "mycompany"
+  billing_email            = "billing@mycompany.com"
+  blog_url                 = "https://mycompany.com/blog"
+  twitter_username         = "mycompany"
 }
 
 output "organization_id" {
